@@ -1,4 +1,4 @@
-Cистема общения в пул реквестах:
+1Cистема общения в пул реквестах:
 
 1) Комментируем построчно в files changed, общаемся в conversation
 https://monosnap.com/file/fqP1MB5ZINTuFvfNQ9Ai0nNqOPyqwj

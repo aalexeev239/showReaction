@@ -1,3 +1,5 @@
+/* Uncomment to make a bookmarlet */
+// javascript:
 (function showReaction(){
 
 	/* SETUP: your GitHub username */
@@ -16,7 +18,10 @@
 		}
 		var lastComment = table.children[table.children.length - 1];
 		/* TODO: improve selection. This fails if several people reacted */
-		var btns = lastComment.querySelectorAll('.reaction-summary-item[aria-label="'+ USERNAME +'"]');
+		var btns = [].slice.call(lastComment.querySelectorAll('.reaction-summary-item')).filter(function (btn) {
+			var label = btn.getAttribute('aria-label');
+			return label.indexOf(USERNAME) === 0;
+		});
 		var flag = true;
 		for (var j = btns.length - 1; j>=0; j--) {
 			var labels = btns[j].value.split(' ');

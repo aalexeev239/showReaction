@@ -1,5 +1,4 @@
-/* Uncomment to make a bookmarlet */
-// javascript:
+// javascript: /* Uncomment to make a bookmarlet */
 (function showReaction(){
 
 	/* SETUP: your GitHub username */
